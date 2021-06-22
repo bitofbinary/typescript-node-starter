@@ -3,12 +3,16 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Basic Options */
-    "target": "ES2018",
+    "target": "es5",
+    "lib": ["ES2015"],
     "module": "commonjs",
     "rootDir": "./",
     "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+
     // "lib": [],                                   /* Specify library files to be included in the compilation. */
     // "allowJs": true,                             /* Allow javascript files to be compiled. */
     // "checkJs": true,                             /* Report errors in .js files. */
@@ -66,7 +70,5 @@
     // "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
 
     /* Advanced Options */
-    "skipLibCheck": true /* Skip type checking of declaration files. */,
-    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   }
 }
